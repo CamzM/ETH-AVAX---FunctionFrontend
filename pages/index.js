@@ -72,7 +72,6 @@ export default function HomePage() {
   const deposit = async () => {
     if (atm) {
       if (depositAmount <= 0) {
-        // Display an error message or perform any desired error handling
         return <p>Please enter a valid deposit amount.</p>;
       }
   
@@ -85,7 +84,6 @@ export default function HomePage() {
   const withdraw = async () => {
     if (atm) {
       if (withdrawAmount <= 0) {
-        // Display an error message or perform any desired error handling
         return <p>Please enter a valid withdraw amount.</p>;
       }
       let tx = await atm.withdraw(withdrawAmount);
